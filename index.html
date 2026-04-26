@@ -239,93 +239,111 @@
 
         <div class="flex overflow-x-auto gap-6 snap-x snap-mandatory md:px-[max(1rem,calc((100vw-80rem)/2))] -mx-4 md:-mx-[max(1rem,calc((100vw-80rem)/2))] scrollbar-hide pt-4 pr-[max(1rem,calc((100vw-80rem)/2))] pb-8 pl-[max(1rem,calc((100vw-80rem)/2))] gap-x-6 gap-y-6">
             
-            <!-- Case 1: Fintech -->
+            <!-- Case 1: LLM Portal -->
             <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card flex flex-col hover:border-cyan-500/30 group rounded-2xl pt-8 pr-8 pb-8 pl-8 justify-between">
                 <div class="">
                     <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-mono border border-cyan-500/20 bg-cyan-500/10 px-2 py-1 rounded text-cyan-400">Финтех</span>
-                        <iconify-icon icon="lucide:file-check-2" class="text-neutral-500 group-hover:text-cyan-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                        <span class="text-xs font-mono border border-cyan-500/20 bg-cyan-500/10 px-2 py-1 rounded text-cyan-400">LLM-портал</span>
+                        <iconify-icon icon="lucide:layout-dashboard" class="text-neutral-500 group-hover:text-cyan-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Автоматизация документооборота</h3>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Единый портал SOTA LLM</h3>
                     <p class="text-base mb-6 font-light text-neutral-400 leading-relaxed">
-                        Локальный ИИ-агент на LLaMA-2 автоматизирует обработку контрактов, KYC, compliance-отчетов. Извлечение данных из PDF, проверка требований.
+                        OpenWebUI + LiteLLM gateway: доступ к зарубежным SOTA-моделям без VPN, роли, база знаний, история диалогов и подключение внутренних агентов через FastAPI-шлюз.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
-                    <div><div class="text-lg font-semibold text-white tracking-tight">+40%</div><div class="text-xs text-neutral-500">Скорость</div></div>
-                    <div><div class="text-lg font-semibold text-white tracking-tight">1.2M ₽</div><div class="text-xs text-neutral-500">Экономия</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">без VPN</div><div class="text-xs text-neutral-500">Доступ</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">FastAPI</div><div class="text-xs text-neutral-500">Агенты</div></div>
                 </div>
             </div>
 
-            <!-- Case 2: Production -->
+            <!-- Case 2: Agent Chatbots -->
             <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card flex flex-col hover:border-emerald-500/30 group rounded-2xl pt-8 pr-8 pb-8 pl-8 justify-between">
                 <div class="">
                     <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-mono border border-emerald-500/20 bg-emerald-500/10 px-2 py-1 rounded text-emerald-400">Производство</span>
-                        <iconify-icon icon="lucide:factory" class="text-neutral-500 group-hover:text-emerald-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                        <span class="text-xs font-mono border border-emerald-500/20 bg-emerald-500/10 px-2 py-1 rounded text-emerald-400">Агенты</span>
+                        <iconify-icon icon="lucide:network" class="text-neutral-500 group-hover:text-emerald-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Система анализа брака</h3>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Сеть агентских чат-ботов</h3>
                     <p class="leading-relaxed text-base font-light text-neutral-400 mb-6">
-                        Мультивекторный агент на 120+ датчиков. Real-time анализ, HNSW индексирование. Упреждающие алерты и выявление аномалий.
+                        LangGraph-оркестрация с обязательными tool calls, Qdrant dense+sparse, rerank top-5 и Langfuse-трейсинг. Агенты ищут контекст, вызывают сервисы и возвращают структурированный результат.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
-                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">↓8.2%</div><div class="text-xs text-neutral-500">Брак</div></div>
-                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">2.8M ₽</div><div class="text-xs text-neutral-500">Экономия</div></div>
+                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">Top-5</div><div class="text-xs text-neutral-500">Ретрив</div></div>
+                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">Langfuse</div><div class="text-xs text-neutral-500">Трейсинг</div></div>
                 </div>
             </div>
 
-            <!-- Case 3: SaaS -->
+            <!-- Case 3: EdTech Secretary -->
             <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/30 group">
                 <div>
                     <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-mono border border-purple-500/20 bg-purple-500/10 px-2 py-1 rounded text-purple-400">SaaS</span>
-                        <iconify-icon icon="lucide:bot-message-square" class="text-neutral-500 group-hover:text-purple-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                        <span class="text-xs font-mono border border-purple-500/20 bg-purple-500/10 px-2 py-1 rounded text-purple-400">EdTech</span>
+                        <iconify-icon icon="lucide:calendar-check" class="text-neutral-500 group-hover:text-purple-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Чатбот поддержки</h3>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">AI-секретарь учебного процесса</h3>
                     <p class="text-base mb-6 font-light text-neutral-400 leading-relaxed">
-                        Облачный RAG-агент на GPT-4 + Qdrant. Ищет документацию, генерирует ответы, маршрутизирует сложные вопросы операторам.
+                        Для онлайн-школы английского: тест A1-C2, личные кабинеты, календарь занятий, пересчет стоимости и AI-разбор ошибок ученика с отчетом для методиста.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
-                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">62%</div><div class="text-xs text-neutral-500">Авто-решения</div></div>
-                    <div><div class="text-lg font-semibold text-white tracking-tight">+28%</div><div class="text-xs text-neutral-500">CSAT</div></div>
+                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">A1-C2</div><div class="text-xs text-neutral-500">Тесты</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">Supabase</div><div class="text-xs text-neutral-500">Backend</div></div>
                 </div>
             </div>
 
-            <!-- Case 4: Logistics -->
+            <!-- Case 4: HR Agent -->
             <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card rounded-2xl p-8 flex flex-col justify-between hover:border-orange-500/30 group">
                 <div>
                     <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-mono border border-orange-500/20 bg-orange-500/10 px-2 py-1 rounded text-orange-400">Логистика</span>
-                        <iconify-icon icon="lucide:package-check" class="text-neutral-500 group-hover:text-orange-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                        <span class="text-xs font-mono border border-orange-500/20 bg-orange-500/10 px-2 py-1 rounded text-orange-400">HR</span>
+                        <iconify-icon icon="lucide:user-search" class="text-neutral-500 group-hover:text-orange-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Умное управление складом</h3>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Супер-агент подбора кандидатов</h3>
                     <p class="text-base mb-6 font-light text-neutral-400 leading-relaxed">
-                        Многоагентная система: прогноз спроса, оптимизация запасов, умное размещение, risk-based инвентаризация с RFID.
+                        RAG-поиск по базе резюме, автоматическое обновление по FTP, сопоставление с вакансией, план интервью и оценка ответов по рубрикам через LangGraph.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
-                    <div><div class="text-lg font-semibold text-white tracking-tight">↓43%</div><div class="text-xs text-neutral-500">Дефициты</div></div>
-                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">5 мес</div><div class="text-xs text-neutral-500">Окупаемость</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">10 000</div><div class="text-xs text-neutral-500">Точек</div></div>
+                    <div class=""><div class="text-lg font-semibold text-white tracking-tight">Рубрики</div><div class="text-xs text-neutral-500">Оценка</div></div>
                 </div>
             </div>
 
-            <!-- Case 5: Clinic -->
+            <!-- Case 5: Video Analytics -->
             <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card rounded-2xl p-8 flex flex-col justify-between hover:border-rose-500/30 group">
                 <div>
                     <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-mono border border-rose-500/20 bg-rose-500/10 px-2 py-1 rounded text-rose-400">Медицина</span>
-                        <iconify-icon icon="lucide:stethoscope" class="text-neutral-500 group-hover:text-rose-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                        <span class="text-xs font-mono border border-rose-500/20 bg-rose-500/10 px-2 py-1 rounded text-rose-400">Security</span>
+                        <iconify-icon icon="lucide:cctv" class="text-neutral-500 group-hover:text-rose-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
                     </div>
-                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">Умная запись пациентов</h3>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">On-prem видео и аудио аналитика</h3>
                     <p class="text-base mb-6 font-light text-neutral-400 leading-relaxed">
-                        Voice/Chat агент (Asterisk + Mistral 7B). Голосовая запись, triage по симптомам, smart scheduling и напоминания.
+                        Прототип для 200+ видеопотоков: GPU-декодирование, YOLO/DeepSORT, LLAVA-13B для спорных детекций, аудиоотпечатки в Qdrant и WebSocket-алерты оператору.
                     </p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
-                    <div><div class="text-lg font-semibold text-white tracking-tight">↓5.3%</div><div class="text-xs text-neutral-500">No-show</div></div>
-                    <div><div class="text-lg font-semibold text-white tracking-tight">+36%</div><div class="text-xs text-neutral-500">Загрузка</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">200+</div><div class="text-xs text-neutral-500">Потоков</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">LLAVA</div><div class="text-xs text-neutral-500">VLM-слой</div></div>
+                </div>
+            </div>
+
+            <!-- Case 6: Codebase Assistant -->
+            <div class="min-w-[85vw] md:min-w-[450px] snap-center glass-card rounded-2xl p-8 flex flex-col justify-between hover:border-indigo-500/30 group">
+                <div>
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="text-xs font-mono border border-indigo-500/20 bg-indigo-500/10 px-2 py-1 rounded text-indigo-400">DevTools</span>
+                        <iconify-icon icon="lucide:code-2" class="text-neutral-500 group-hover:text-indigo-400 transition-colors" width="24" stroke-width="1.5"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-medium tracking-tight mb-3 text-white">ИИ-анализатор кодовой базы</h3>
+                    <p class="text-base mb-6 font-light text-neutral-400 leading-relaxed">
+                        Локальный ассистент на Qwen + Qdrant: семантический разбор кода по функциям и классам, ответы по архитектуре, code review, генерация автотестов и онбординг разработчиков.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 border-t pt-4 border-white/10">
+                    <div><div class="text-lg font-semibold text-white tracking-tight">Qwen3</div><div class="text-xs text-neutral-500">Embeddings</div></div>
+                    <div><div class="text-lg font-semibold text-white tracking-tight">pytest/Jest</div><div class="text-xs text-neutral-500">Тесты</div></div>
                 </div>
             </div>
 
